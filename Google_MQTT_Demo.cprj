@@ -89,7 +89,7 @@
 
   <target Bname="FRDM-K32L3A6" Bvendor="NXP" Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="SP_FPU" Dmve="NO_MVE" Dname="K32L3A60VPJ1A" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="NXP:11" Pname="cm4">
     <output intdir="./Objects/" name="image" outdir="./Objects/" type="exe"/>
-    <ldflags add="--diag_suppress 6314 --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./RTE/Device/K32L3A60VPJ1A_cm4/K32L3A60xxx_cm4_flash.scf"/>
+    <ldflags add="--diag_suppress 6314 --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --entry=Reset_Handler" compiler="AC6" file="./RTE/Device/K32L3A60VPJ1A_cm4/K32L3A60xxx_cm4_flash.sct"/>
     <cflags add="-O1 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -ffunction-sections -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-4 -std=c99 -xc" compiler="AC6"/>
     <asflags add="-gdwarf-4 -masm=auto" compiler="AC6"/>
     <includes>.;./Board_IO</includes>
